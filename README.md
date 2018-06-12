@@ -1,0 +1,1 @@
+Maps the moods of various locations around the world based off of news for that location.
