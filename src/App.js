@@ -3,11 +3,11 @@ import './App.css';
 
 class App extends Component {
   render() {
-      document.title = "moodmap";
+      document.title = "MoodMap";
       return (
       <div>
           <div>
-              <h1>moodmap</h1>
+              <h1>MoodMap</h1>
               <p>Web Application in React that maps the moods of various locations around the world based off of news for that location.</p>
               <p>Made By: John Stoermer and Yatharth Rawat</p>
           </div>
