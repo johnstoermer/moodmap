@@ -3,8 +3,8 @@ import './App.css';
 
 class App extends Component {
   render() {
-      document.title = "moodmap"
-    return (
+      document.title = "moodmap";
+      return (
       <div>
           <div>
               <h1>moodmap</h1>
@@ -12,7 +12,7 @@ class App extends Component {
               <p>Made By: John Stoermer and Yatharth Rawat</p>
           </div>
       </div>
-    );
+      );
   }
 }
 
