@@ -11,10 +11,13 @@ function searchAPI(city) {
         "negativeArticles" : [],
     };
     newsapi.v2.everything({
-        sources: 'cnn, the-washington-post',
+        sources: 'cnn, fox-news, the-washington-post, the-wall-street-journal, ' +
+        'business-insider, bloomberg, breitbart-news, buzzfeed, abc-news, cbs-news, cnbc, daily-mail,' +
+        'entertainment-weekly, fortune, independent, msnbc, mtv-news, nbc-news, reuters, newsweek, the-american-conservative, ' +
+        'the-hill, the-huffington-post, the-new-york-times, the-telegraph, the-washington-times, time, usa-today, vice-news',
         q: city,
-        from: '2017-12-01',
-        to: '2017-12-12',
+        from: '2018-05-01',
+        to: '2018-05-01',
         language: 'en',
         sortBy: 'relevancy',
     }).then(response => {
@@ -50,7 +53,7 @@ function searchAPI(city) {
                 console.log(score);
                 cityJSON.mood += score;
             } catch (e) {
-                console.log('shit');
+                console.log('error');
             }
         }
         console.log(cityJSON);
@@ -58,4 +61,4 @@ function searchAPI(city) {
     });
 }
 
-let result = searchAPI('chicago');
+let result = searchAPI('canada');
